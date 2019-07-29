@@ -1,0 +1,34 @@
+.header
+  padding-top 65px
+  position absolute
+  top 0
+  padding-left 80px
+  padding-right 80px
+  width 52%
+  z-index 9
+  &__logo
+    width 145px
+    height 55px
+    overflow hidden
+    &_img
+      width 185px
+      height 105px
+      transform translateX(-22px) translateY(-16px)
+
+  &__call
+    color #505050
+    font-size 16px
+    font-weight 500
+    padding 12px 20px
+    box-shadow 1px 1px 3px rgba(0,0,0, 0)
+    transition .6s box-shadow var(--animation)
+    &:after
+      content ''
+      width 8px
+      height 8px
+      border-radius 50%
+      display block
+      margin-left 15px
+      background-color var(--yellow)
+    &:hover
+      box-shadow 1px 1px 3px rgba(0,0,0, .15)

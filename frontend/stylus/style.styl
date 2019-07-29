@@ -1,0 +1,52 @@
+
+
+@import 'inc/fonts.styl'
+
+
+@import 'plugins/wrd-ui.styl'
+@import 'plugins/wrd-reset.styl'
+@import 'plugins/wrd-atomic.styl'
+
+
+
+@import 'inc/header.styl'
+
+
+.body
+  background #ffffff
+  transition .3s opacity var(--animation)
+
+
+.container
+  max-width 1600px
+
+
+.main
+  &__aside
+    position fixed
+    right 0
+    top 0
+    bottom 0
+    width 100px
+    z-index 9
+    padding-top 65px
+    background-color #ffffff
+    &_navigation
+      width 35px
+      margin-top 30vh
+      .rect
+        opacity .3
+        &.active
+          opacity 1
+    .menu-hamburger
+      width 45px
+      height 26px
+
+
+
+@import 'section/*'
+@import 'page/*'
+@import 'article/*'
+@import 'modal/*'
+@import 'animation/*'
+@import 'adaptive/*'

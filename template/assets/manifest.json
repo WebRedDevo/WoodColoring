@@ -1,0 +1,10 @@
+{
+	"lang":"ru",
+	"name":"Студия разработки сайтов WebRedDevo.ru",
+	"description": "Студия разработки сложных сайтов для решения повседневных бизнес задач",
+	"short_name":"WebRedDevo.ru",
+	"start_url": "/",
+	"theme_color": "#000000",
+	"background_color": "#000000",
+	"display": "fullscreen"
+}

@@ -1,0 +1,44 @@
+section.section.section--initial-screen
+  article.slide.grid.container
+    
+    img(src="assets/projects-slide-1.jpg" alt="").slide__img
+    
+    .slide__left.flex.f-d__c.j-c__c.a-i__f-e
+      .slide__left_wrap.flex.a-i__c
+        
+        ul.section--initial-screen__navigation
+          li.section--initial-screen__navigation_item.flex
+            a(href="#").section--initial-screen__navigation_link 01
+          li.section--initial-screen__navigation_item.flex
+            a(href="#").section--initial-screen__navigation_link.active 02
+          li.section--initial-screen__navigation_item.flex
+            a(href="#").section--initial-screen__navigation_link 03
+            
+        .section--initial-screen__info
+          h1.section--initial-screen__title Покраска деревянных домов, срубов, бань
+          p.section--initial-screen__description Древесина под влиянием окружающей среды, атмосферных осадков, действия солнечных лучей, насекомых.. теряет свойства и срок своей службы. Чтобы это предотвратить и сохранить свойства древесины на долгие годы, её необходимо покрыть защитными составами.  
+          .section--initial-screen__buttons.flex
+            a(href="#").section--initial-screen__buttons_more
+              svg.more__svg
+                rect(width="100%" height="100%").more__svg_rect
+              span Узнать больше
+      
+          
+        .section--initial-screen__social.flex
+          a(href="#").section--initial-screen__social_link vk
+          span.section--initial-screen__social_slash /
+          a(href="#").section--initial-screen__social_link instagram
+          span.section--initial-screen__social_slash /
+          a(href="#").section--initial-screen__social_link youtube
+          
+    .slide__image.grid
+      .slide__button.slide__button--next.flex.a-i__f-e
+        .slide__button_wrap.flex
+          button.section--initial-screen__button.section--initial-screen__button--next.flex.a-i__c.j-c__c
+            +icon('arrow')
+      .slide__button.slide__button--prev.flex.j-c__f-e
+        .slide__button_wrap.flex
+          button.section--initial-screen__button.section--initial-screen__button--prev.flex.a-i__c.j-c__c
+            +icon('arrow')
+      
+    

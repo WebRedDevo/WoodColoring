@@ -1,0 +1,35 @@
+include controls/init/controls.pug
+if isGo
+  |{{ define "index" }}
+  
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title WoodColoring
+    meta( name="description" content="WoodColoring description")
+    meta( name="keywords" content="WoodColoring keywords" )
+    meta( name="author" content="WebRedDevo.ru")
+  body.body.load
+    include inc/header.pug
+    main.main
+      aside.main__aside.flex.f-d__c.a-i__c
+        button.menu-hamburger
+          svg.menu-hamburger__svg
+            rect(width="45px" height="2px")
+            rect(width="38px" height="2px" y="10px" x="7")
+            rect(width="45px" height="2px" y="20px")
+        
+        svg.main__aside_navigation
+          rect(width="16px" height="1px" x="10").rect
+          rect(width="26px" height="1px" y="33px" x="5").rect
+          rect(width="36px" height="1px" y="66px").rect.active
+          rect(width="26px" height="1px" y="99px" x="5").rect
+          rect(width="16px" height="1px" y="132px" x="10").rect
+        
+      include section/initial-screen.pug
+      include section/section-services.pug
+    include inc/footer.pug
+    
+if isGo
+  |{{ end }}

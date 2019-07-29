@@ -1,0 +1,102 @@
+.page--portfolio
+  &__title
+    color #ffffff
+    font-family "Proxima Nova Rg"
+    font-size 56px
+    font-weight 300
+    line-height 28px
+    letter-spacing 6.72px
+    margin-top 75px
+    margin-left 190px
+    &:before
+      content ''
+      width 120px
+      height 1px
+      background-color #ffffff
+      display block
+      margin-right 25px
+
+  // слайдер
+  &__works
+    width 100%
+    overflow hidden
+    padding-top 90px
+    &_wrap
+      width max-content
+
+  // Фильтр в портфолио
+  &__filter
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    margin auto
+    background-image linear-gradient(to left, #0f0f0f 0%, #161415 35%, rgba(34, 29, 33, 0) 100%)
+    &-list
+      text-align right
+      padding-right 80px
+      padding-left 50px
+      &_item
+        &:before
+          content ''
+          width 14px
+          height 14px
+          border-radius 50%
+          border 1px solid rgba(255, 255, 255, 0.5)
+          order 1
+        &:after
+          content ''
+          width 5px
+          height 5px
+          background-color #ffffff
+          border-radius 50%
+          margin-right -10px
+          transform scale(.9)
+          transition .6s var(--animation)
+          opacity 0
+        &.active
+          &:after
+            transform scale(1)
+            opacity 1
+
+        &:not(:first-child)
+          margin-top 35px
+
+      &_link
+        color #ffffff
+        font-family "Proxima Nova Rg"
+        font-size 19px
+        font-weight 300
+        letter-spacing 2px
+        margin-right 15px
+
+
+  // управление в портфолио
+  &__control
+    margin-top 50px
+    &_scroll
+      width 82px
+      height 82px
+      .scroll-circle
+        fill transparent
+        stroke-width 4
+        stroke #fff
+        opacity .5
+    &_button
+      &:before
+        content ''
+        width 141px
+        height 1px
+        background-color #ffffff
+        display block
+        margin-left -10px
+      .icon
+        fill #fff
+        width 16px
+        height 30px
+        order -1
+      &.button--prev
+          margin-right 50px
+      &.button--next
+          margin-left 50px
+          transform rotate(180deg)

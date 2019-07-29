@@ -1,0 +1,126 @@
+// grid
+.grid
+  display grid
+
+// flex
+.flex
+  display flex
+.f-w__w
+  flex-wrap wrap
+
+// justify-content
+.j-c__s-b
+  justify-content space-between
+.j-c__c
+  justify-content center
+.j-c__f-e
+  justify-content flex-end
+// flex direction
+.f-d__c
+  flex-direction column
+
+// align-items
+.a-i__f-s
+  align-items flex-start
+.a-i__f-e
+  align-items flex-end
+.a-i__c
+  align-items center
+.p__r
+  position relative
+
+// z-index
+.z-i__-1
+  z-index -1
+.z-i__-2
+  z-index -2
+.z-i__0
+  z-index 0
+.z-i__1
+  z-index 1
+.z-i__2
+  z-index 2
+
+//float
+.f__l
+  float left
+.f__r
+  float right
+
+// display
+.d__i-b
+  display inline-block
+
+.h__100vh
+  height 100vh
+
+
+.container
+  margin auto
+  left 0
+  right 0
+
+.max-w__1440
+  max-width 1440px
+.max-w__1280
+  max-width 1280px
+
+.pd-80
+  padding-left 80px
+  padding-right 80px
+
+.wallpaper
+  position absolute
+  top 0
+  z-index -1
+
+
+// blur background
+.bg-blur
+  &:before
+    content ''
+    background inherit
+    filter blur(9px)
+    position absolute
+    left -20px
+    right -20px
+    bottom -20px
+    top -20px
+    z-index 0
+  &:after
+    content ''
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color rgba(47, 47, 47, 0.53)
+
+
+// dark background
+.bg-dark
+  &:before
+    content ''
+    background-color #000000
+    opacity 0.2
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+
+// transition bottom line to right
+.b-line
+  position relative
+  &:after
+    content ''
+    position absolute
+    bottom -4px
+    left 0
+    transition .33s
+    width 0%
+    height 1px
+    background #000
+  &:hover
+    &:after
+      width 100%
